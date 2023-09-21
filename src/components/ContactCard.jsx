@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Card.css";
+import "../styles/Card.css";
 const ContactCard = ({ name, id, email, phone }) => {
   return (
     <div className="container">

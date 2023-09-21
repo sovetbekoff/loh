@@ -26,25 +26,46 @@ const EditContact = () => {
   };
   return (
     <div>
-      <input
-        type="text"
-        value={editName}
-        onChange={(e) => setEditName(e.target.value)}
-        placeholder="Имя контакта"
-      />
-      <input
-        type="text"
-        value={editEmail}
-        onChange={(e) => setEditEmail(e.target.value)}
-        placeholder="Email контакта"
-      />
-      <input
-        type="text"
-        value={editPhone}
-        onChange={(e) => setEditPhone(e.target.value)}
-        placeholder="Телефон контакта"
-      />
-      <button onClick={handleClick}>Изменить</button>
+      <div className="form-container">
+        <h2>Edit User</h2>
+
+        <div className="form-group">
+          <label className="form-label" htmlFor="name">
+            Name:
+          </label>
+          <input
+            type="text"
+            value={editName}
+            onChange={(e) => setEditName(e.target.value)}
+            placeholder="Имя контакта"
+          />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="email">
+            Email:
+          </label>
+          <input
+            type="text"
+            value={editEmail}
+            onChange={(e) => setEditEmail(e.target.value)}
+            placeholder="Email контакта"
+          />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="phone">
+            phone:
+          </label>
+          <input
+            type="text"
+            value={editPhone}
+            onChange={(e) => setEditPhone(e.target.value)}
+            placeholder="Телефон контакта"
+          />
+        </div>
+        <button onClick={handleClick} className="submit-button" type="submit">
+          Update User
+        </button>
+      </div>
     </div>
   );
 };
