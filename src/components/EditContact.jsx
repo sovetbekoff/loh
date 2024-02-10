@@ -83,6 +83,7 @@ const EditContact = () => {
         <button onClick={handleClickUp} className="submit-button" type="submit">
           Update User
         </button>
+        <button></button>
         <button onClick={handleClick} className="submit-button" type="submit">
           Update User
         </button>
