@@ -11,7 +11,7 @@ const ContactDetails = () => {
     getContactDetails(id);
   }, []);
 
-  console.log(contactDetails);
+  // console.log(contactDetails);
   return (
     <div>
       <h1>{contactDetails.contactName}</h1>

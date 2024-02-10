@@ -3,7 +3,7 @@ import React, { createContext, useReducer } from "react";
 
 export const contactsContext = createContext();
 
-const API = "http://localhost:8000/users";
+const API = "http://localhost:7000/users";
 
 const INIT_STATE = {
   contacts: [],
@@ -30,11 +30,15 @@ const ContactsContextProvider = ({ children }) => {
 
   const getContacts = async () => {
     const { data } = await axios.get(API);
-    dispatch({
-      type: "GET_CONTACTS",
-      payload: data,
-    });
+    dispatch(addTodo(data));
   };
+
+  const addTodo = (elem) => {
+    return {
+      type: 'GET_CONTACTS',
+      payload: elem
+    }
+  }
 
   const getContactDetails = async (id) => {
     const { data } = await axios.get(`${API}/${id}`);

@@ -1,8 +1,9 @@
-/* ContactCard.css */
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Центрирование по оси X */
 }
+
 .cards {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
@@ -12,7 +13,12 @@
   text-align: center;
   transition: transform 0.2s ease-in-out;
   margin: 10px;
-  width: 200px; /* Устанавливаем фиксированную ширину карточки */
+  width: 50%;
+  height: 70%;
+  display: flex; /* Использование flexbox внутри карточки */
+  flex-direction: column; /* Расположение элементов в столбец */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
 }
 
 .cards:hover {
@@ -21,6 +27,7 @@
 }
 
 .cardContact {
+  color: #555;
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 10px; /* Добавляем небольшой отступ снизу */
@@ -29,4 +36,23 @@
 .email {
   color: #555;
   font-size: 0.9rem; /* Уменьшаем размер текста адреса электронной почты */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px; /* Добавляем отступ наверху для кнопок */
+}
+
+.button-container button {
+  background-color: transparent;
+  border: none;
+  border-radius: 22px;
+  width: 60%;
+  height: 22%;
+}
+
+.button-container button:hover {
+  background-color: #cccccc;
+  cursor: pointer;
 }
