@@ -47,7 +47,7 @@ const EditContact = () => {
         </div>
         <div className="form-group">
           <label className="form-label" htmlFor="email">
-            img:
+            url foto:
           </label>
           <input
             type="text"
@@ -83,7 +83,7 @@ const EditContact = () => {
         <button onClick={handleClickUp} className="submit-button" type="submit">
           Update User
         </button>
-        <button></button>
+
         <button onClick={handleClick} className="submit-button" type="submit">
           Update User
         </button>

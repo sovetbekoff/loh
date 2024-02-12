@@ -49,7 +49,7 @@ const AddContact = () => {
       </div>
       <div className="form-group">
         <label className="form-label" htmlFor="email">
-          img
+          url photo
         </label>
         <input
           className="form-input"

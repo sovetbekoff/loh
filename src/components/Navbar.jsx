@@ -8,7 +8,7 @@ const Navbar = () => {
       {/* Navbar */}
       <NavLink to="/">Главная</NavLink>
       <img src={me} alt="" style={{ width: "20%", height: " 42px" }} />
-      <NavLink to="/add">Добавить контакт</NavLink>
+      <NavLink to="/add">Добавитет</NavLink>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ContactsContextProvider from "./context/ContactContextProvider";
 import Navbar from "./components/Navbar";
 import MainRoutes from "./MainRoutes";
+import Footer1 from "./components/Footer";
 
 function App() {
   let map = new Map();
@@ -17,6 +18,7 @@ function App() {
     <ContactsContextProvider>
       <Navbar />
       <MainRoutes />
+      <Footer1 />
     </ContactsContextProvider>
   );
 }
